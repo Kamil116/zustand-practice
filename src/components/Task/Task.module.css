@@ -1,0 +1,39 @@
+.task {
+    background-color: navajowhite;
+    color: darkslategrey;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: var(--radius);
+    cursor: move;
+}
+
+.bottomWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    background-color: gray;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    color: floralwhite;
+}
+
+.PLANNED {
+    background-color: lightslategray;
+}
+
+.ONGOING {
+    background-color: indianred;
+}
+
+.DONE {
+    background-color: forestgreen;
+}
+
+.deleteTask {
+    cursor: pointer;
+}

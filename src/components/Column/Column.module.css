@@ -1,0 +1,60 @@
+.column {
+    min-height: 30vh;
+    background-color: dimgray;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 2rem 0;
+    width: 20%;
+    box-sizing: border-box;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    /* чтобы колонка не съезжала при наведении,
+     включаем размер границ изначально */
+    border: dashed transparent 4px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        all: unset;
+        font-size: 16px;
+        border-radius: var(--radius);
+        color: black;
+        cursor: pointer;
+        background-color: floralwhite;
+        padding: 0.5rem 1rem;
+
+        &:active {
+            background-color: lightgray;
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modalContent {
+    background: whitesmoke;
+    padding: 2rem;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.drop {
+    border-color: white;
+}
