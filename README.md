@@ -10,7 +10,7 @@
 - Zustand
 - CSS Modules
 - clsx
-- ESLint
+- Biome
 
 ## Команды
 
@@ -18,8 +18,15 @@
 npm run dev
 npm run build
 npm run lint
+npm run format
+npm run check
 npm run preview
 ```
+
+- `dev` - запуск проекта в dev-режиме
+- `build` - TypeScript-проверка и production-сборка
+- `lint` / `check` - проверка Biome
+- `format` - форматирование и safe fixes через Biome
 
 ## Структура проекта
 
@@ -38,6 +45,7 @@ src/
     constants.ts
   types/
     types.ts
+  assets/
   App.tsx
   App.css
   index.css
@@ -52,3 +60,4 @@ src/
 - selectors и shallow-сравнение
 - persist и devtools middleware
 - типизация на TypeScript
+- настройка Biome для форматирования и lint rules
