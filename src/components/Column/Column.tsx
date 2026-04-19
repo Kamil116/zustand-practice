@@ -1,7 +1,7 @@
 import styles from './Column.module.css'
-import type {ColumnState} from "../../types/types.ts";
-import Task from "../Task/Task.tsx";
-import {useStore} from "../../store.ts";
+import type {ColumnState} from "@/types/types.ts";
+import Task from "@/components/Task/Task.tsx";
+import {useStore} from "@/store.ts";
 import {useShallow} from "zustand/react/shallow";
 import {useState} from "react";
 import clsx from "clsx";

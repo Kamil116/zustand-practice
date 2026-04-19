@@ -1,4 +1,4 @@
-import {COLUMN_TYPES} from "../lib/constants.ts";
+import {COLUMN_TYPES} from "@/lib/constants.ts";
 
 export type ColumnState = typeof COLUMN_TYPES[keyof typeof COLUMN_TYPES];
 

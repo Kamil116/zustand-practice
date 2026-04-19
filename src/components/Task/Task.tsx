@@ -1,8 +1,8 @@
 import styles from './Task.module.css'
 import clsx from "clsx";
-import {useStore} from "../../store.ts";
-import Trash from "../icons/Trash.tsx";
-import type {TaskType} from "../../types/types.ts";
+import {useStore} from "@/store.ts";
+import Trash from "@/components/icons/Trash.tsx";
+import type {TaskType} from "@/types/types.ts";
 
 function Task({task}: { task: TaskType }) {
     const setDraggedTask = useStore(store => store.setDraggedTask)
