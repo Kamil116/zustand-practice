@@ -1,8 +1,8 @@
-import {COLUMN_TYPES} from "@/lib/constants.ts";
+import type { COLUMN_TYPES } from "@/lib/constants.ts";
 
-export type ColumnState = typeof COLUMN_TYPES[keyof typeof COLUMN_TYPES];
+export type ColumnState = (typeof COLUMN_TYPES)[keyof typeof COLUMN_TYPES];
 
 export type TaskType = {
-    title: string;
-    state: ColumnState;
-}
+	title: string;
+	state: ColumnState;
+};
